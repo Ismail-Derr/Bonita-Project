@@ -1,0 +1,226 @@
+XA transaction timeout: 180
+Using DB_VENDOR: h2
+Using DB_NAME: bonitadb
+Using DB_HOST: localhost
+Using DB_PORT: 9091
+Using BIZ_DB_NAME: businessdb
+ ____              _ _
+|  _ \            (_) |
+| |_) | ___  _ __  _| |_ __ _
+|  _ < / _ \| '_ \| | __/ _` |
+| |_) | (_) | | | | | || (_| |
+|____/ \___/|_| |_|_|\__\__,_|
+
+(Platform Setup 8.0.0)
+
+[INFO] configuration for Database vendor: h2
+[INFO] Connected to 'h2' database with url: 'jdbc:h2:file:../h2_database/bonitadb' with user: 'BONITAUSER'
+[INFO] Executed SQL script /opt/bonita/setup/platform_conf/sql/h2/createTables.sql
+[INFO] Executed SQL script /opt/bonita/setup/platform_conf/sql/h2/createQuartzTables.sql
+[INFO] Executed SQL script /opt/bonita/setup/platform_conf/sql/h2/postCreateStructure.sql
+[INFO] Executed SQL script /opt/bonita/setup/platform_conf/sql/h2/initTables.sql
+[INFO] Platform created.
+[INFO] Database will be initialized with configuration files from folder: platform_conf/initial
+[INFO] Initial configuration files successfully pushed to database
+[INFO] Tomcat environment detected with root /opt/bonita
+[INFO] Running auto-configuration using file /opt/bonita/setup/database.properties
+[INFO] Creating a backup of configuration file 'server/bin/setenv.bat' to 'setup/tomcat-backups/setenv.bat.2023-07-03_08h04m32s'
+[INFO] Setting Bonita internal database vendor to 'h2' and Business Data database vendor to 'h2' in 'setenv.bat' file
+[INFO] Creating a backup of configuration file 'server/bin/setenv.sh' to 'setup/tomcat-backups/setenv.sh.2023-07-03_08h04m32s'
+[INFO] Setting Bonita internal database vendor to 'h2' and Business Data database vendor to 'h2' in 'setenv.sh' file
+[INFO] Creating a backup of configuration file 'server/conf/Catalina/localhost/bonita.xml' to 'setup/tomcat-backups/bonita.xml.2023-07-03_08h04m32s'
+[INFO] Configuring file 'conf/Catalina/localhost/bonita.xml' with your DB values for Bonita internal database on 'h2' and for Business Data database on 'h2'
+[INFO] Your h2 driver file 'server/lib/bonita/h2-1.4.199.jar' already exists. Skipping the copy.
+[INFO] Your h2 driver file 'server/lib/bonita/h2-1.4.199.jar' already exists. Skipping the copy.
+[INFO] Tomcat auto-configuration complete.
+Custom scripts:
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+2023-07-03T08:04:35,841+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.VersionLoggerListener - Server version name:   Apache Tomcat/9.0.72
+2023-07-03T08:04:35,845+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.VersionLoggerListener - Server built:          Feb 18 2023 09:25:13 UTC
+2023-07-03T08:04:35,845+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.VersionLoggerListener - Server version number: 9.0.72.0
+2023-07-03T08:04:35,846+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.VersionLoggerListener - OS Name:               Linux
+2023-07-03T08:04:35,846+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.VersionLoggerListener - OS Version:            5.14.0-284.11.1.el9_2.x86_64
+2023-07-03T08:04:35,846+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.VersionLoggerListener - Architecture:          amd64
+2023-07-03T08:04:35,847+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.VersionLoggerListener - Java Home:             /usr/lib/jvm/java-11-openjdk
+2023-07-03T08:04:35,848+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.VersionLoggerListener - JVM Version:           11.0.19+7-alpine-r0
+2023-07-03T08:04:35,849+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.VersionLoggerListener - JVM Vendor:            Alpine
+2023-07-03T08:04:35,849+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.VersionLoggerListener - CATALINA_BASE:         /opt/bonita/server
+2023-07-03T08:04:35,850+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.VersionLoggerListener - CATALINA_HOME:         /opt/bonita/server
+2023-07-03T08:04:35,851+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.VersionLoggerListener - Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+2023-07-03T08:04:35,851+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.VersionLoggerListener - Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+2023-07-03T08:04:35,851+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.VersionLoggerListener - Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+2023-07-03T08:04:35,852+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.VersionLoggerListener - Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+2023-07-03T08:04:35,852+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.VersionLoggerListener - Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+2023-07-03T08:04:35,852+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.VersionLoggerListener - Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+2023-07-03T08:04:35,852+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.VersionLoggerListener - Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+2023-07-03T08:04:35,853+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.VersionLoggerListener - Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+2023-07-03T08:04:35,853+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.VersionLoggerListener - Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+2023-07-03T08:04:35,853+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.VersionLoggerListener - Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+2023-07-03T08:04:35,853+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.VersionLoggerListener - Command line argument: -Dnop
+2023-07-03T08:04:35,853+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.VersionLoggerListener - Command line argument: -Djava.util.logging.manager=org.apache.logging.log4j.jul.LogManager
+2023-07-03T08:04:35,854+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.VersionLoggerListener - Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+2023-07-03T08:04:35,854+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.VersionLoggerListener - Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+2023-07-03T08:04:35,854+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.VersionLoggerListener - Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+2023-07-03T08:04:35,854+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.VersionLoggerListener - Command line argument: -Dlog4j.configurationFile=/opt/bonita/conf/logs/log4j2-appenders.xml,/opt/bonita/conf/logs/log4j2-loggers.xml
+2023-07-03T08:04:35,855+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.VersionLoggerListener - Command line argument: -Dorg.bonitasoft.platform.setup.folder=/opt/bonita/server/../setup
+2023-07-03T08:04:35,855+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.VersionLoggerListener - Command line argument: -Dbonita.runtime.transaction.xa-timeout=180
+2023-07-03T08:04:35,855+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.VersionLoggerListener - Command line argument: -Dorg.bonitasoft.h2.database.dir=/opt/bonita/server/../h2_database
+2023-07-03T08:04:35,855+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.VersionLoggerListener - Command line argument: -Dsysprop.bonita.db.vendor=h2
+2023-07-03T08:04:35,855+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.VersionLoggerListener - Command line argument: -Dsysprop.bonita.bdm.db.vendor=h2
+2023-07-03T08:04:35,856+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.VersionLoggerListener - Command line argument: -Dcom.arjuna.ats.arjuna.common.propertiesFile=/opt/bonita/server/conf/jbossts-properties.xml
+2023-07-03T08:04:35,856+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.VersionLoggerListener - Command line argument: -Dorg.bonitasoft.engine.incident.folder=/opt/bonita/server/logs
+2023-07-03T08:04:35,856+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.VersionLoggerListener - Command line argument: -Dfile.encoding=UTF-8
+2023-07-03T08:04:35,856+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.VersionLoggerListener - Command line argument: -Xshare:auto
+2023-07-03T08:04:35,856+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.VersionLoggerListener - Command line argument: -XX:+HeapDumpOnOutOfMemoryError
+2023-07-03T08:04:35,857+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.VersionLoggerListener - Command line argument: -XX:HeapDumpPath=/opt/bonita/server/logs
+2023-07-03T08:04:35,857+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.VersionLoggerListener - Command line argument: -Djava.security.egd=file:/dev/./urandom
+2023-07-03T08:04:35,857+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.VersionLoggerListener - Command line argument: -Dlog4j2.formatMsgNoLookups=true
+2023-07-03T08:04:35,857+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.VersionLoggerListener - Command line argument: -Dignore.endorsed.dirs=
+2023-07-03T08:04:35,857+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.VersionLoggerListener - Command line argument: -Dcatalina.base=/opt/bonita/server
+2023-07-03T08:04:35,858+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.VersionLoggerListener - Command line argument: -Dcatalina.home=/opt/bonita/server
+2023-07-03T08:04:35,858+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.VersionLoggerListener - Command line argument: -Djava.io.tmpdir=/opt/bonita/server/temp
+2023-07-03T08:04:35,861+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.c.AprLifecycleListener - The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/lib/jvm/java-11-openjdk/lib/server:/usr/lib/jvm/java-11-openjdk/lib:/usr/lib/jvm/java-11-openjdk/../lib:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+2023-07-03T08:04:36,244+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-03T08:04:36,293+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.Catalina - Server initialization in [825] milliseconds
+2023-07-03T08:04:36,570+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] c.a.a.arjuna - ARJUNA012170: TransactionStatusManager started on port 41371 and host 127.0.0.1 with service com.arjuna.ats.arjuna.recovery.ActionStatusService
+2023-07-03T08:04:36,695+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.c.StandardService - Starting service [Catalina]
+2023-07-03T08:04:36,695+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.72]
+2023-07-03T08:04:36,704+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.HostConfig - Deploying deployment descriptor [/opt/bonita/server/conf/Catalina/localhost/bonita.xml]
+2023-07-03T08:04:40,195+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.c.C.[.[.[/bonita] - No Spring WebApplicationInitializer types detected on classpath
+2023-07-03T08:04:40,385+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.p.s.ScriptExecutor - configuration for Database vendor: h2
+2023-07-03T08:04:40,420+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.p.s.PlatformSetup - System property org.bonitasoft.platform.setup.folder is set to /opt/bonita/server/../setup
+2023-07-03T08:04:40,442+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.p.s.PlatformSetup - Connected to 'h2' database with url: 'jdbc:h2:file:/opt/bonita/h2_database/bonitadb' with user: 'BONITAUSER'
+2023-07-03T08:04:40,557+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.p.s.PlatformSetup - Platform is already created.
+2023-07-03T08:04:40,558+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.p.s.PlatformSetup - Upgrading default configuration with files from folder: /opt/bonita/server/../setup/platform_conf/initial
+2023-07-03T08:04:40,690+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.EngineInitializer - Initializing Bonita Engine...
+2023-07-03T08:04:48,481+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.p.CustomDataTypesRegistration - Registering custom Hibernate data type org.bonitasoft.engine.persistence.XMLType@3987bfc8
+2023-07-03T08:04:54,239+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.p.CustomDataTypesRegistration - Registering custom Hibernate data type org.bonitasoft.engine.persistence.XMLType@337676ea
+2023-07-03T08:04:54,239+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.p.CustomDataTypesRegistration - Registering custom Hibernate data type org.bonitasoft.engine.persistence.XMLType@3987bfc8
+2023-07-03T08:04:56,953+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.t.TimeTracker - -----
+Time Tracker 'org.bonitasoft.engine.tracking.TimeTracker':
+  - trackingEnabled: false
+  - flushIntervalInSeconds: 30000
+  - activatedRecords: EXECUTE_CONNECTOR_DISCONNECT EXECUTE_CONNECTOR_INCLUDING_POOL_SUBMIT EVALUATE_EXPRESSION_INCLUDING_CONTEXT EVALUATE_EXPRESSIONS EXECUTE_CONNECTOR_CALLABLE EXECUTE_CONNECTOR_INPUT_EXPRESSIONS EXECUTE_CONNECTOR_WORK EVALUATE_EXPRESSION EXECUTE_CONNECTOR_OUTPUT_OPERATIONS 
+  - flushEventListeners: org.bonitasoft.engine.tracking.memory.MemoryFlushEventListener: 
+active: false
+No DayRecord registered in memory. org.bonitasoft.engine.tracking.csv.CSVFlushEventListener: 
+active: true
+outputFolder: /opt/bonita/server/temp
+ 
+  - records.size: 0
+  - last flush occurrence: Thu Jan 01 00:00:00 GMT 1970
+
+-----
+2023-07-03T08:04:59,061+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.p.i.PlatformServiceImpl - Can't cache the platform, maybe the platform cache service is not started yet: The cache is not started, call start() on the cache service
+2023-07-03T08:04:59,111+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.EngineInitializer - Starting node...
+2023-07-03T08:04:59,111+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.EngineInitializer -   ____              _ _           _____                                      _ _         
+2023-07-03T08:04:59,111+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.EngineInitializer -  |  _ \            (_) |         / ____|                                    (_) |        
+2023-07-03T08:04:59,111+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.EngineInitializer -  | |_) | ___  _ __  _| |_ __ _  | |     ___  _ __ ___  _ __ ___  _   _ _ __  _| |_ _   _ 
+2023-07-03T08:04:59,112+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.EngineInitializer -  |  _ < / _ \| '_ \| | __/ _` | | |    / _ \| '_ ` _ \| '_ ` _ \| | | | '_ \| | __| | | |
+2023-07-03T08:04:59,112+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.EngineInitializer -  | |_) | (_) | | | | | || (_| | | |___| (_) | | | | | | | | | | | |_| | | | | | |_| |_| |
+2023-07-03T08:04:59,112+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.EngineInitializer -  |____/ \___/|_| |_|_|\__\__,_|  \_____\___/|_| |_| |_|_| |_| |_|\__,_|_| |_|_|\__|\__, |
+2023-07-03T08:04:59,112+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.EngineInitializer -                                                                                     __/ |
+2023-07-03T08:04:59,112+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.EngineInitializer -                                                                                    |___/ 
+2023-07-03T08:04:59,113+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.p.PlatformManager - Starting platform:
+2023-07-03T08:04:59,115+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.p.i.PlatformServiceImpl - Can't cache the platform, maybe the platform cache service is not started yet: The cache is not started, call start() on the cache service
+2023-07-03T08:04:59,116+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.EngineInitializer - Bonita platform version (binaries): 8.0.0
+2023-07-03T08:04:59,116+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.EngineInitializer - Bonita database schema version: 8.0
+2023-07-03T08:04:59,118+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.p.PlatformManager - Start service of platform : org.bonitasoft.engine.cache.ehcache.EhCacheCacheService@6db160b4
+2023-07-03T08:04:59,570+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.p.PlatformManager - Start service of platform : org.bonitasoft.engine.scheduler.impl.SchedulerServiceImpl@3eab736e
+2023-07-03T08:04:59,571+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.s.i.SchedulerServiceImpl - Start scheduler
+2023-07-03T08:04:59,712+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.s.i.BonitaSchedulerFactory - Using default implementation for ThreadExecutor
+2023-07-03T08:04:59,734+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.q.c.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2023-07-03T08:04:59,734+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.q.c.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+2023-07-03T08:04:59,736+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.q.p.m.ShutdownHookPlugin - Registering Quartz shutdown hook.
+2023-07-03T08:04:59,737+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.s.i.BonitaJobStoreCMT - Using db table-based data access locking (synchronization).
+2023-07-03T08:04:59,741+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.s.i.BonitaJobStoreCMT - JobStoreCMT initialized.
+2023-07-03T08:04:59,742+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.q.c.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'QuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.bonitasoft.engine.scheduler.impl.BonitaJobStoreCMT' - which supports persistence. and is not clustered.
+
+2023-07-03T08:04:59,743+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.s.i.BonitaSchedulerFactory - Quartz scheduler 'QuartzScheduler' initialized from an externally provided properties instance.
+2023-07-03T08:04:59,743+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.s.i.BonitaSchedulerFactory - Quartz scheduler version: 2.3.2
+2023-07-03T08:04:59,744+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.q.c.QuartzScheduler - JobFactory set to: org.bonitasoft.engine.scheduler.impl.TransactionalSimpleJobFactory@7f099be1
+2023-07-03T08:04:59,764+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.s.i.BonitaJobStoreCMT - Freed 0 triggers from 'acquired' / 'blocked' state.
+2023-07-03T08:04:59,767+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.s.i.BonitaJobStoreCMT - Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2023-07-03T08:04:59,767+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.s.i.BonitaJobStoreCMT - Recovery complete.
+2023-07-03T08:04:59,768+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.s.i.BonitaJobStoreCMT - Removed 0 'complete' triggers.
+2023-07-03T08:04:59,769+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.s.i.BonitaJobStoreCMT - Removed 0 stale fired job entries.
+2023-07-03T08:04:59,770+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.q.c.QuartzScheduler - Scheduler QuartzScheduler_$_NON_CLUSTERED started.
+2023-07-03T08:04:59,778+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.p.PlatformManager - Start service of platform : org.bonitasoft.engine.service.BonitaTaskExecutor@1b2e70e7
+2023-07-03T08:04:59,780+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.p.PlatformManager - Start service of platform : org.bonitasoft.engine.classloader.ClassLoaderServiceImpl@4772191a
+2023-07-03T08:04:59,814+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.t.TenantServicesManager - Initializing service org.bonitasoft.engine.profile.DefaultProfilesUpdater of tenant 1
+2023-07-03T08:04:59,843+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.p.DefaultProfilesUpdater - Loading profiles from file profiles.xml
+2023-07-03T08:04:59,843+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.p.DefaultProfilesUpdater - Default profiles not up to date, updating them...
+2023-07-03T08:04:59,906+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.p.DefaultProfilesUpdater - Updated default profiles [ImportStatus(name=User, status=ADDED, errors=[]), ImportStatus(name=Administrator, status=ADDED, errors=[])]
+2023-07-03T08:04:59,907+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.t.TenantServicesManager - Initializing service org.bonitasoft.engine.message.MessagesHandlingService of tenant 1
+2023-07-03T08:04:59,908+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.t.TenantServicesManager - Initializing service org.bonitasoft.engine.command.api.impl.CommandServiceImpl of tenant 1
+2023-07-03T08:04:59,908+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.t.TenantServicesManager - Initializing service org.bonitasoft.engine.connector.impl.ConnectorExecutorImpl of tenant 1
+2023-07-03T08:04:59,908+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.t.TenantServicesManager - Initializing service org.bonitasoft.engine.tracking.TimeTracker of tenant 1
+2023-07-03T08:04:59,908+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.t.TenantServicesManager - Initializing service org.bonitasoft.engine.business.data.impl.JPABusinessDataRepositoryImpl of tenant 1
+2023-07-03T08:04:59,908+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.t.TenantServicesManager - Initializing service org.bonitasoft.engine.tenant.TenantElementsRestartSupervisorLocal of tenant 1
+2023-07-03T08:04:59,908+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.t.TenantServicesManager - Initializing service org.bonitasoft.engine.authorization.PermissionServiceImpl of tenant 1
+2023-07-03T08:04:59,908+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.t.TenantServicesManager - Initializing service org.bonitasoft.engine.business.application.importer.MandatoryLivingApplicationImporter of tenant 1
+2023-07-03T08:04:59,908+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.b.a.i.MandatoryLivingApplicationImporter - Importing Bonita mandatory pages
+2023-07-03T08:05:03,041+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.b.a.i.MandatoryLivingApplicationImporter - Mandatory pages updated or created: [custompage_themeBonita ADDED, custompage_caseoverview ADDED, custompage_layoutBonita ADDED, custompage_adminApplicationDetailsBonita ADDED, custompage_adminApplicationListBonita ADDED, custompage_adminBDMBonita ADDED, custompage_adminCaseDetailsBonita ADDED, custompage_adminCaseListBonita ADDED, custompage_adminGroupListBonita ADDED, custompage_adminInstallExportOrganizationBonita ADDED, custompage_adminProcessDetailsBonita ADDED, custompage_adminProcessListBonita ADDED, custompage_adminProfileListBonita ADDED, custompage_adminResourceListBonita ADDED, custompage_adminRoleListBonita ADDED, custompage_adminTaskDetailsBonita ADDED, custompage_adminTaskListBonita ADDED, custompage_adminUserDetailsBonita ADDED, custompage_adminUserListBonita ADDED, custompage_home ADDED, custompage_tenantStatusBonita ADDED, custompage_processAutogeneratedForm ADDED, custompage_taskAutogeneratedForm ADDED, custompage_layoutWithoutMenuBonita ADDED, custompage_applicationDirectoryBonita ADDED, custompage_error403Bonita ADDED, custompage_error404Bonita ADDED, custompage_error500Bonita ADDED]
+2023-07-03T08:05:03,042+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.b.a.i.MandatoryLivingApplicationImporter - Import of Bonita mandatory pages completed
+2023-07-03T08:05:03,042+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.b.a.i.MandatoryLivingApplicationImporter - Importing Bonita mandatory applications
+2023-07-03T08:05:03,568+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.b.a.i.MandatoryLivingApplicationImporter - Mandatory applications updated or created: [appDirectoryBonita ADDED, superAdminAppBonita ADDED]
+2023-07-03T08:05:03,568+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.b.a.i.MandatoryLivingApplicationImporter - Import of Bonita mandatory applications completed
+2023-07-03T08:05:03,569+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.t.TenantServicesManager - Initializing service org.bonitasoft.engine.business.application.impl.ApplicationServiceImpl of tenant 1
+2023-07-03T08:05:03,569+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.t.TenantServicesManager - Initializing service org.bonitasoft.engine.work.WorkServiceImpl of tenant 1
+2023-07-03T08:05:03,569+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.t.TenantServicesManager - Initializing service org.bonitasoft.engine.work.RetryingWorkExecutorService of tenant 1
+2023-07-03T08:05:03,594+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.t.TenantElementsRestarter - Preparing restart of elements
+2023-07-03T08:05:03,595+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.t.r.MessagesRestartHandler - Reinitializing message instances in non-stable state to make them reworked by MessagesHandlingService
+2023-07-03T08:05:03,604+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.t.r.MessagesRestartHandler - 0 message instances found and reset.
+2023-07-03T08:05:03,604+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.t.r.MessagesRestartHandler - Reinitializing waiting message events in non-stable state to make them reworked by MessagesHandlingService
+2023-07-03T08:05:03,607+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.t.r.MessagesRestartHandler - 0 waiting message events found and reset.
+2023-07-03T08:05:03,726+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [BonitaTaskExecutor|58] o.b.e.c.ClassLoaderServiceImpl - Created classloader GLOBAL: BonitaClassLoader[id=GLOBAL, isActive=true, creationTime=2023-07-03T08:05:03.714848Z, uuid='2ea0d1aa-d231-484b-9f37-7b42b872be99', children=[]]
+2023-07-03T08:05:03,728+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [BonitaTaskExecutor|58] o.b.e.c.ClassLoaderServiceImpl - Created classloader TENANT:1: BonitaClassLoader[id=TENANT:1, isActive=true, creationTime=2023-07-03T08:05:03.727593Z, uuid='0cca343a-3722-48b9-866c-9a89f9ed1768', children=[]]
+2023-07-03T08:05:03,729+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.t.TenantServicesManager - START tenant-level service org.bonitasoft.engine.profile.DefaultProfilesUpdater on tenant with ID 1
+2023-07-03T08:05:03,729+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.t.TenantServicesManager - START tenant-level service org.bonitasoft.engine.message.MessagesHandlingService on tenant with ID 1
+2023-07-03T08:05:03,729+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.m.MessagesHandlingService - Starting BPMN messages matcher thread
+2023-07-03T08:05:03,730+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.m.MessagesHandlingService - Thread that handle messages matching successfully started
+2023-07-03T08:05:03,730+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.t.TenantServicesManager - START tenant-level service org.bonitasoft.engine.command.api.impl.CommandServiceImpl on tenant with ID 1
+2023-07-03T08:05:03,781+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.t.TenantServicesManager - START tenant-level service org.bonitasoft.engine.connector.impl.ConnectorExecutorImpl on tenant with ID 1
+2023-07-03T08:05:03,784+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.t.TenantServicesManager - START tenant-level service org.bonitasoft.engine.tracking.TimeTracker on tenant with ID 1
+2023-07-03T08:05:03,784+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.t.TimeTracker - Starting TimeTracker...
+2023-07-03T08:05:03,784+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.t.TimeTracker - TimeTracker started.
+2023-07-03T08:05:03,784+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.t.TenantServicesManager - START tenant-level service org.bonitasoft.engine.business.data.impl.JPABusinessDataRepositoryImpl on tenant with ID 1
+2023-07-03T08:05:03,787+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.t.TenantServicesManager - START tenant-level service org.bonitasoft.engine.tenant.TenantElementsRestartSupervisorLocal on tenant with ID 1
+2023-07-03T08:05:03,788+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.t.TenantServicesManager - START tenant-level service org.bonitasoft.engine.authorization.PermissionServiceImpl on tenant with ID 1
+2023-07-03T08:05:03,915+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.t.TenantServicesManager - START tenant-level service org.bonitasoft.engine.business.application.importer.MandatoryLivingApplicationImporter on tenant with ID 1
+2023-07-03T08:05:03,915+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.t.TenantServicesManager - START tenant-level service org.bonitasoft.engine.business.application.impl.ApplicationServiceImpl on tenant with ID 1
+2023-07-03T08:05:03,915+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.t.TenantServicesManager - START tenant-level service org.bonitasoft.engine.work.WorkServiceImpl on tenant with ID 1
+2023-07-03T08:05:03,915+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.t.TenantServicesManager - START tenant-level service org.bonitasoft.engine.work.RetryingWorkExecutorService on tenant with ID 1
+2023-07-03T08:05:03,918+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.w.DefaultBonitaExecutorServiceFactory - Creating a new Thread pool to handle works: org.bonitasoft.engine.work.BonitaThreadPoolExecutor@37116413[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+2023-07-03T08:05:03,925+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.t.TenantElementsRestarter - Restarting unfinished elements
+2023-07-03T08:05:03,930+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.p.PlatformManager - Platform started.
+2023-07-03T08:05:03,930+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [BonitaTaskExecutor|58] o.b.e.h.SchedulerServiceRestartHandler - Rescheduling all scheduler Triggers in ERROR state
+2023-07-03T08:05:03,931+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.EngineInitializer - Node started successfully.
+2023-07-03T08:05:03,932+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [Tenant 1 starter Thread|59] o.b.e.a.i.StarterThread - Restarting elements of tenant 1 that were not finished at the last shutdown
+2023-07-03T08:05:03,933+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.EngineInitializer - Initialization of Bonita Engine done! (took 23241ms)
+2023-07-03T08:05:03,933+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [Tenant 1 starter Thread|59] o.b.e.a.i.StarterThread - Executing Restart Handler org.bonitasoft.engine.tenant.restart.MessagesRestartHandler
+2023-07-03T08:05:03,936+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [Tenant 1 starter Thread|59] o.b.e.a.i.StarterThread - Executing Restart Handler org.bonitasoft.engine.tenant.restart.RecoveryHandler
+2023-07-03T08:05:03,944+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.a.i.a.i.CustomOrDefaultApplicationInstaller - Trying to detect custom application (.zip file from folder my-application)
+2023-07-03T08:05:03,947+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.a.i.a.i.CustomOrDefaultApplicationInstaller - No custom application detected under folder my-application. Continuing with default Bonita startup.
+2023-07-03T08:05:03,948+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.b.a.i.DefaultLivingApplicationImporter - Importing Bonita default pages
+2023-07-03T08:05:03,948+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.b.a.i.DefaultLivingApplicationImporter - Detected a first run (a tenant creation or an installation from scratch), importing provided removable pages
+2023-07-03T08:05:03,951+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [Tenant 1 starter Thread|59] o.b.e.t.r.RecoveryMonitor - Recovery of elements executed. Nothing detected that needs recovery.
+2023-07-03T08:05:03,954+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [Bonita-Message-Matching|60] o.b.e.m.MessagesHandlingService - Found 0 potential message/event couples
+2023-07-03T08:05:04,338+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.b.a.i.DefaultLivingApplicationImporter - Default pages updated or created: [custompage_userCaseDetailsBonita ADDED, custompage_userCaseListBonita ADDED, custompage_processlistBonita ADDED, custompage_tasklist ADDED]
+2023-07-03T08:05:04,338+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.b.a.i.DefaultLivingApplicationImporter - Import of Bonita default pages completed
+2023-07-03T08:05:04,338+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.b.a.i.DefaultLivingApplicationImporter - Importing Bonita default applications
+2023-07-03T08:05:04,338+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.b.a.i.DefaultLivingApplicationImporter - Detected a first run since a Bonita update, a Bonita upgrade, a tenant creation or an installation from scratch. Importing default applications
+2023-07-03T08:05:04,668+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.b.a.i.DefaultLivingApplicationImporter - Default applications updated or created: [adminAppBonita ADDED, userAppBonita ADDED]
+2023-07-03T08:05:04,668+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.b.e.b.a.i.DefaultLivingApplicationImporter - Import of Bonita default applications completed
+2023-07-03T08:05:05,059+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.HostConfig - Deployment of deployment descriptor [/opt/bonita/server/conf/Catalina/localhost/bonita.xml] has finished in [28,354] ms
+2023-07-03T08:05:05,068+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.HostConfig - Deploying web application directory [/opt/bonita/server/webapps/ROOT]
+2023-07-03T08:05:05,107+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.HostConfig - Deployment of web application directory [/opt/bonita/server/webapps/ROOT] has finished in [39] ms
+2023-07-03T08:05:05,112+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-07-03T08:05:05,143+0000 | bonita-community-58d4454d76-2sng9 | INFO  | [main|1] o.a.c.s.Catalina - Server startup in [28848] milliseconds

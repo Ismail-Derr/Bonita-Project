@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bonita-community
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bonita-community
+  template:
+    metadata:
+      labels:
+        app: bonita-community
+    spec:
+      containers:
+        - name: bonita
+          image: bonita
+          env:
+            - name: TENANT_LOGIN
+              value: eve
+            - name: TENANT_PASSWORD
+              value: eve
+          ports:
+            - containerPort: 8080
